@@ -80,7 +80,7 @@ module.exports = function () {
             attrs: { href: 'javascript:void(0);',
               disabled: !!this.allowedChunkClass(-1) }
           },
-          ['<<']
+          [h('i', { 'class': 'fa fa-angle-double-left' })]
         )]
       );
 
@@ -97,7 +97,7 @@ module.exports = function () {
             attrs: { href: 'javascript:void(0);',
               disabled: !!this.allowedChunkClass(1) }
           },
-          ['>>']
+          [h('i', { 'class': 'fa fa-angle-double-right' })]
         )]
       );
     }
@@ -131,7 +131,7 @@ module.exports = function () {
                   disabled: !!this.allowedPageClass(this.page - 1)
                 }
               },
-              ['<']
+              [h('i', { 'class': 'fa fa-angle-left' })]
             )]
           ), items, h(
             'li',
@@ -147,7 +147,7 @@ module.exports = function () {
                   disabled: !!this.allowedPageClass(this.page + 1)
                 }
               },
-              ['>']
+              [h('i', { 'class': 'fa fa-angle-left' })]
             )]
           ), nextChunk, lastPage]
         ), h(
