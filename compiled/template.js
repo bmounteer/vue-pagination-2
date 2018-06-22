@@ -147,7 +147,7 @@ module.exports = function () {
                   disabled: !!this.allowedPageClass(this.page + 1)
                 }
               },
-              [h('i', { 'class': 'fa fa-angle-left' })]
+              [h('i', { 'class': 'fa fa-angle-right' })]
             )]
           ), nextChunk, lastPage]
         ), h(

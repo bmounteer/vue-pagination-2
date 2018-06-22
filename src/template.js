@@ -73,7 +73,7 @@ module.exports = function() {
     <a class={theme.link} 
     href="javascript:void(0);"
     disabled={!!this.allowedPageClass(this.page+1)} 
-    ><i class="fa fa-angle-left"></i></a>
+    ><i class="fa fa-angle-right"></i></a>
     </li>
     {nextChunk}
     {lastPage}
