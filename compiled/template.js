@@ -127,7 +127,7 @@ module.exports = function () {
             [h(
               'a',
               { 'class': theme.link,
-                attrs: { href: 'javascript:void(0);',
+                attrs: { href: 'javascript:void(0);', rel: 'previous',
                   disabled: !!this.allowedPageClass(this.page - 1)
                 }
               },
@@ -143,7 +143,7 @@ module.exports = function () {
             [h(
               'a',
               { 'class': theme.link,
-                attrs: { href: 'javascript:void(0);',
+                attrs: { href: 'javascript:void(0);', rel: 'next',
                   disabled: !!this.allowedPageClass(this.page + 1)
                 }
               },

@@ -63,7 +63,7 @@ module.exports = function() {
     <li class={`VuePagination__pagination-item ${theme.item} ${theme.prev} VuePagination__pagination-item-prev-page ${this.allowedPageClass(this.page-1)}`}
     onClick={this.prev.bind(this)}>
     <a class={theme.link} 
-    href="javascript:void(0);"
+    href="javascript:void(0);" rel="previous"
     disabled={!!this.allowedPageClass(this.page-1)} 
     ><i class="far fa-angle-left"></i></a>
     </li>
@@ -71,7 +71,7 @@ module.exports = function() {
     <li class={`VuePagination__pagination-item ${theme.item} ${theme.next} VuePagination__pagination-item-next-page ${this.allowedPageClass(this.page+1)}`}
     onClick={this.next.bind(this)}>
     <a class={theme.link} 
-    href="javascript:void(0);"
+    href="javascript:void(0);" rel="next"
     disabled={!!this.allowedPageClass(this.page+1)} 
     ><i class="far fa-angle-right"></i></a>
     </li>
